@@ -82,7 +82,7 @@ export default function PoliciesPage() {
                 includes:
               </p>
               <ul className="list-disc pl-6 text-neutral-300 space-y-2">
-                <li>Full access to Interview Coder software</li>
+                <li>Full access to Interview Helper software</li>
                 <li>Automatic updates and new features</li>
                 <li>Customer support</li>
               </ul>
@@ -95,12 +95,12 @@ export default function PoliciesPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-neutral-300">
-                By using Interview Coder, you agree to these terms of service:
+                By using Interview Helper, you agree to these terms of service:
               </p>
               <ul className="list-disc pl-6 text-neutral-300 space-y-2">
                 <li>
                   <strong>License:</strong> We grant you a limited,
-                  non-exclusive, non-transferable license to use Interview Coder
+                  non-exclusive, non-transferable license to use Interview Helper
                   for your personal coding interview preparation. This tool is
                   NOT intended to be used in a real interview. The purpose of
                   the tool is purely illustrative and all of our marketing

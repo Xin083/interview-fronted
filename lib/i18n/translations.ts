@@ -22,7 +22,7 @@ export const translations = {
     hero: {
       tagline: "F*ck Leetcode.",
       subtitle:
-        "Interview Coder is an invisible AI to solve any coding problem.",
+        "Interview Helper is an invisible AI to solve any coding problem.",
       downloadMac: "Download for Mac",
       downloadWindows: "Download for Windows",
       macSilicon: "Download for Mac (Apple Silicon)",
@@ -44,9 +44,9 @@ export const translations = {
         "For an in-depth tutorial on setting it up, visit our help center",
       step1: {
         subtitle: "Get Started",
-        title: "Subscribe to Interview Coder",
+        title: "Subscribe to Interview Helper",
         description:
-          "Make an account and subscribe to Interview Coder. Get instant access to our AI-powered interview solution generator."
+          "Make an account and subscribe to Interview Helper. Get instant access to our AI-powered interview solution generator."
       },
       step2: {
         subtitle: "Capture the Problem",
@@ -67,9 +67,9 @@ export const translations = {
           "If the solutions are incorrect or you need an optimization, take extra screenshots of your code with ⌘ + H. Press ⌘ + ↵ again and we'll debug and optimize your code, with before and after comparisons."
       },
       subscribeToday: "Subscribe Today ($60/month)",
-      welcomeTo: "Welcome to Interview Coder",
+      welcomeTo: "Welcome to Interview Helper",
       continueUsing:
-        "To continue using Interview Coder, you'll need to subscribe ($60/month)",
+        "To continue using Interview Helper, you'll need to subscribe ($60/month)",
       toggleVisibility: "Toggle Visibility",
       quitApp: "Quit App",
       subscribe: "Subscribe",
@@ -91,10 +91,10 @@ export const translations = {
     // FAQ Section
     faq: {
       title: "Common Questions",
-      subtitle: "Everything you need to know about Interview Coder.",
+      subtitle: "Everything you need to know about Interview Helper.",
       questions: {
         q1: {
-          question: "Is Interview Coder free?",
+          question: "Is Interview Helper free?",
           answer:
             "No, it's $60 a month. In exchange, you get access to the absolute latest models, including o3-mini-high."
         },
@@ -126,7 +126,7 @@ export const translations = {
     // CTA Section
     cta: {
       title: "Take the short way.",
-      subtitle: "Download and use Interview Coder today."
+      subtitle: "Download and use Interview Helper today."
     },
 
     // Language Toggle
@@ -140,7 +140,7 @@ export const translations = {
       title: "Commands we love",
       subtitle:
         "These commands are designed to be natural and easy to remember.",
-      hideShow: "Hide/show the Interview Coder window instantly.",
+      hideShow: "Hide/show the Interview Helper window instantly.",
       captureScreenshot:
         "Problem Mode: Capture screenshots of the interview question and requirements. Solution Mode: Take screenshots of your code to get optimization suggestions.",
       generateSolution:
@@ -153,7 +153,7 @@ export const translations = {
 
     // Footer
     footer: {
-      allRightsReserved: "© 2025 Interview Coder. All rights reserved.",
+      allRightsReserved: "© 2025 Interview Helper. All rights reserved.",
       support: "Support",
       contact: "Contact Us",
       refundPolicy: "Refund Policy",
@@ -161,7 +161,7 @@ export const translations = {
       termsOfService: "Terms of Service",
       download: "Download",
       description:
-        "Interview Coder is an undetectable desktop application to help you pass your Leetcode interviews.",
+        "Interview Helper is an undetectable desktop application to help you pass your Leetcode interviews.",
       allSystemsOnline: "All systems online"
     },
 
@@ -169,7 +169,7 @@ export const translations = {
     undetectability: {
       title: "How is it undetectable?",
       subtitle:
-        "Interview Coder has the most robust undetectability features on the planet.",
+        "Interview Helper has the most robust undetectability features on the planet.",
       screenSharing: "Screen Sharing Detection",
       screenSharingDesc:
         "Our app is completely invisible to screen sharing software and screenshots on platforms like Zoom, Google Meet, Hackerrank, and Coderpad.",
@@ -190,16 +190,16 @@ export const translations = {
       affiliate: "Affiliate",
       proof: "Proof",
       watchMe:
-        "Watch me get an offer from Amazon using Interview Coder. Throughout this whole video, you'll see me use Interview Coder for both the OA and the final round.",
+        "Watch me get an offer from Amazon using Interview Helper. Throughout this whole video, you'll see me use Interview Helper for both the OA and the final round.",
       skeptical: "Skeptical? Watch the entire, uncut technical interview",
       pro: "PRO"
     },
 
     // Subscribe Page
     subscribe: {
-      welcome: "Welcome to Interview Coder",
+      welcome: "Welcome to Interview Helper",
       needToSubscribe:
-        "To continue using Interview Coder, you'll need to subscribe ($60/month)",
+        "To continue using Interview Helper, you'll need to subscribe ($60/month)",
       toggleVisibility: "Toggle Visibility",
       quitApp: "Quit App",
       subscribeButton: "Subscribe",
@@ -226,7 +226,7 @@ export const translations = {
 
     // Auth Components
     auth: {
-      loginToInterviewCoder: "Log in to Interview Coder",
+      loginToInterviewCoder: "Log in to Interview Helper",
       createAccount: "Create your account",
       orContinueWithEmail: "Or continue with email",
       emailAddress: "Email address",
@@ -261,7 +261,7 @@ export const translations = {
     hero: {
       tagline: "लीटकोड को भूल जाओ।",
       subtitle:
-        "Interview Coder एक अदृश्य AI है जो किसी भी कोडिंग समस्या को हल करता है।",
+        "Interview Helper एक अदृश्य AI है जो किसी भी कोडिंग समस्या को हल करता है।",
       downloadMac: "मैक के लिए डाउनलोड करें",
       downloadWindows: "विंडोज के लिए डाउनलोड करें",
       macSilicon: "मैक के लिए डाउनलोड करें (एप्पल सिलिकॉन)",
@@ -278,14 +278,14 @@ export const translations = {
 
     // Steps Section
     steps: {
-      howToUse: "Interview Coder का उपयोग कैसे करें",
+      howToUse: "Interview Helper का उपयोग कैसे करें",
       howToUseSubtitle:
         "इसे सेट करने के लिए विस्तृत ट्यूटोरियल के लिए, हमारे सहायता केंद्र पर जाएं",
       step1: {
         subtitle: "शुरू करें",
-        title: "Interview Coder की सदस्यता लें",
+        title: "Interview Helper की सदस्यता लें",
         description:
-          "एक खाता बनाएं और Interview Coder की सदस्यता लें। हमारे AI-संचालित इंटरव्यू समाधान जनरेटर तक तुरंत पहुंच प्राप्त करें।"
+          "एक खाता बनाएं और Interview Helper की सदस्यता लें। हमारे AI-संचालित इंटरव्यू समाधान जनरेटर तक तुरंत पहुंच प्राप्त करें।"
       },
       step2: {
         subtitle: "समस्या को कैप्चर करें",
@@ -306,9 +306,9 @@ export const translations = {
           "यदि समाधान गलत हैं या आपको अनुकूलन की आवश्यकता है, तो ⌘ + H के साथ अपने कोड के अतिरिक्त स्क्रीनशॉट लें। फिर से ⌘ + ↵ दबाएं और हम आपके कोड को डीबग और अनुकूलित करेंगे, पहले और बाद के तुलना के साथ।"
       },
       subscribeToday: "आज ही सदस्यता लें ($60/माह)",
-      welcomeTo: "Interview Coder में आपका स्वागत है",
+      welcomeTo: "Interview Helper में आपका स्वागत है",
       continueUsing:
-        "Interview Coder का उपयोग जारी रखने के लिए, आपको सदस्यता लेनी होगी ($60/माह)",
+        "Interview Helper का उपयोग जारी रखने के लिए, आपको सदस्यता लेनी होगी ($60/माह)",
       toggleVisibility: "दृश्यता टॉगल करें",
       quitApp: "ऐप से बाहर निकलें",
       subscribe: "सदस्यता लें",
@@ -330,10 +330,10 @@ export const translations = {
     // FAQ Section
     faq: {
       title: "सामान्य प्रश्न",
-      subtitle: "Interview Coder के बारे में आपको जानने की जरूरत है सब कुछ।",
+      subtitle: "Interview Helper के बारे में आपको जानने की जरूरत है सब कुछ।",
       questions: {
         q1: {
-          question: "क्या Interview Coder मुफ्त है?",
+          question: "क्या Interview Helper मुफ्त है?",
           answer:
             "नहीं, यह महीने का $60 है। बदले में, आपको नवीनतम मॉडल तक पहुंच मिलती है, जिसमें o3-mini-high शामिल है।"
         },
@@ -365,7 +365,7 @@ export const translations = {
     // CTA Section
     cta: {
       title: "छोटा रास्ता अपनाएं।",
-      subtitle: "आज ही Interview Coder डाउनलोड करें और उपयोग करें।"
+      subtitle: "आज ही Interview Helper डाउनलोड करें और उपयोग करें।"
     },
 
     // Language Toggle
@@ -378,7 +378,7 @@ export const translations = {
     commands: {
       title: "हमारे पसंदीदा कमांड्स",
       subtitle: "ये कमांड्स स्वाभाविक और याद रखने में आसान हैं।",
-      hideShow: "Interview Coder विंडो को तुरंत छिपाएं/दिखाएं।",
+      hideShow: "Interview Helper विंडो को तुरंत छिपाएं/दिखाएं।",
       captureScreenshot:
         "समस्या मोड: इंटरव्यू प्रश्न और आवश्यकताओं के स्क्रीनशॉट लें। समाधान मोड: अनुकूलन सुझाव प्राप्त करने के लिए अपने कोड के स्क्रीनशॉट लें।",
       generateSolution:
@@ -390,7 +390,7 @@ export const translations = {
 
     // Footer
     footer: {
-      allRightsReserved: "© 2025 Interview Coder. सर्वाधिकार सुरक्षित।",
+      allRightsReserved: "© 2025 Interview Helper. सर्वाधिकार सुरक्षित।",
       support: "सहायता",
       contact: "संपर्क करें",
       refundPolicy: "रिफंड नीति",
@@ -398,7 +398,7 @@ export const translations = {
       termsOfService: "सेवा की शर्तें",
       download: "डाउनलोड",
       description:
-        "Interview Coder एक अदृश्य डेस्कटॉप एप्लिकेशन है जो आपको लीटकोड इंटरव्यू पास करने में मदद करता है।",
+        "Interview Helper एक अदृश्य डेस्कटॉप एप्लिकेशन है जो आपको लीटकोड इंटरव्यू पास करने में मदद करता है।",
       allSystemsOnline: "सभी सिस्टम ऑनलाइन हैं"
     },
 
@@ -406,7 +406,7 @@ export const translations = {
     undetectability: {
       title: "यह कैसे अदृश्य है?",
       subtitle:
-        "Interview Coder में दुनिया के सबसे मजबूत अदृश्यता सुविधाएँ हैं।",
+        "Interview Helper में दुनिया के सबसे मजबूत अदृश्यता सुविधाएँ हैं।",
       screenSharing: "स्क्रीन शेयरिंग डिटेक्शन",
       screenSharingDesc:
         "हमारा ऐप Zoom, Google Meet, Hackerrank और Coderpad जैसे प्लेटफॉर्म पर स्क्रीन शेयरिंग सॉफ्टवेयर और स्क्रीनशॉट के लिए पूरी तरह से अदृश्य है।",
@@ -427,16 +427,16 @@ export const translations = {
       affiliate: "सहबद्ध",
       proof: "प्रमाण",
       watchMe:
-        "मुझे देखें Interview Coder का उपयोग करके Amazon से ऑफर प्राप्त करते हुए। इस पूरे वीडियो में, आप मुझे OA और अंतिम राउंड दोनों के लिए Interview Coder का उपयोग करते हुए देखेंगे।",
+        "मुझे देखें Interview Helper का उपयोग करके Amazon से ऑफर प्राप्त करते हुए। इस पूरे वीडियो में, आप मुझे OA और अंतिम राउंड दोनों के लिए Interview Helper का उपयोग करते हुए देखेंगे।",
       skeptical: "संदेह है? यहां पूरा, अनकट तकनीकी साक्षात्कार देखें।",
       pro: "प्रो"
     },
 
     // Subscribe Page
     subscribe: {
-      welcome: "Interview Coder में आपका स्वागत है",
+      welcome: "Interview Helper में आपका स्वागत है",
       needToSubscribe:
-        "Interview Coder का उपयोग जारी रखने के लिए, आपको सदस्यता लेनी होगी ($60/माह)",
+        "Interview Helper का उपयोग जारी रखने के लिए, आपको सदस्यता लेनी होगी ($60/माह)",
       toggleVisibility: "दृश्यता टॉगल करें",
       quitApp: "ऐप से बाहर निकलें",
       subscribeButton: "सदस्यता लें",
@@ -463,7 +463,7 @@ export const translations = {
 
     // Auth Components
     auth: {
-      loginToInterviewCoder: "Interview Coder में लॉग इन करें",
+      loginToInterviewCoder: "Interview Helper में लॉग इन करें",
       createAccount: "अपना खाता बनाएं",
       orContinueWithEmail: "या ईमेल के साथ जारी रखें",
       emailAddress: "ईमेल पता",

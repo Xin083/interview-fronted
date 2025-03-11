@@ -1,6 +1,6 @@
 Chungin Lee - Written Statement
 
-I am submitting this document as a formal statement regarding my recent creation, public demonstration, and distribution of a software tool known as "Interview Coder." This tool is an invisible AI assistant to help users pass their Leetcode interviews. My intention here is to explain what I did, why I did it, and the broader points I hoped to raise about the state of technical interviews within the technology industry.
+I am submitting this document as a formal statement regarding my recent creation, public demonstration, and distribution of a software tool known as "Interview Helper." This tool is an invisible AI assistant to help users pass their Leetcode interviews. My intention here is to explain what I did, why I did it, and the broader points I hoped to raise about the state of technical interviews within the technology industry.
 
 1. Nature of InterviewCoder
 

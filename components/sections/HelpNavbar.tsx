@@ -25,17 +25,17 @@ const HELP_SECTIONS = [
       {
         id: "getting-started",
         title: "Getting Started",
-        content: "Learn how to get started with Interview Coder"
+        content: "Learn how to get started with Interview Helper"
       },
       {
         id: "configuration",
         title: "Language Configuration",
-        content: "Configure Interview Coder for your needs"
+        content: "Configure Interview Helper for your needs"
       },
       {
         id: "undetectability",
         title: "Undetectability",
-        content: "Understanding how Interview Coder remains undetectable"
+        content: "Understanding how Interview Helper remains undetectable"
       }
     ]
   },
@@ -164,7 +164,7 @@ function NavContent({ className }: NavContentProps) {
           className="flex items-center gap-2 text-[#989898] hover:text-white transition-colors"
         >
           <Button variant="default" className="w-full">
-            Sign in with Interview Coder
+            Sign in with Interview Helper
           </Button>
         </Link>
       )
@@ -277,7 +277,7 @@ export function HelpNavbar() {
             <div className="mt-auto pt-6">
               <div className="border-t border-zinc-800/50 pt-6">
                 <p className="text-xs text-zinc-500 text-center">
-                  © 2025 Interview Coder.
+                  © 2025 Interview Helper.
                   <br />
                   All rights reserved
                 </p>
@@ -316,7 +316,7 @@ export function HelpNavbar() {
                 <div className="mt-auto pt-6">
                   <div className="border-t border-zinc-800/50 pt-6">
                     <p className="text-xs text-zinc-500 text-center">
-                      © 2025 Interview Coder.
+                      © 2025 Interview Helper.
                       <br />
                       All rights reserved
                     </p>

@@ -114,7 +114,7 @@ export default function SignUpForm() {
           <div className="flex flex-col items-center justify-center space-y-6">
             <Image
               src="/logo.svg"
-              alt="Interview Coder"
+              alt="Interview Helper"
               width={48}
               height={48}
               className="rounded-full"

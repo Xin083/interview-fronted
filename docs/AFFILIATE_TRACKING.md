@@ -1,6 +1,6 @@
 # Affiliate Tracking with First Promoter
 
-This document outlines how affiliate tracking is implemented in the Interview Coder webapp using First Promoter.
+This document outlines how affiliate tracking is implemented in the Interview Helper webapp using First Promoter.
 
 ## Overview
 

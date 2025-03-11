@@ -300,7 +300,7 @@ function CheckoutPageContent() {
       <div className="max-w-5xl mx-auto px-4 pt-28 pb-12">
         <div className="mb-8">
           <h2 className="text-base lg:text-lg font-medium text-[#999999] mb-2">
-            Subscribe to Interview Coder
+            Subscribe to Interview Helper
           </h2>
           <div className="text-4xl lg:text-5xl font-bold mb-6">
             Choose your plan

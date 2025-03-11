@@ -170,7 +170,7 @@ export function HelpContent() {
             <div id="getting-started">
               <Header
                 title="Getting Started"
-                description="Welcome to Interview Coder. This guide will help you get up and running quickly."
+                description="Welcome to Interview Helper. This guide will help you get up and running quickly."
               />
 
               <div className="prose prose-invert max-w-none">
@@ -178,7 +178,7 @@ export function HelpContent() {
                   <SectionHeading>Quick Start Steps</SectionHeading>
                   <ol className="mt-4 space-y-3 text-sm text-zinc-300">
                     <li>
-                      Install the Interview Coder app in the download link below
+                      Install the Interview Helper app in the download link below
                       (MacOS only)
                     </li>
                     <li>Move the app into your Applications folder</li>
@@ -242,7 +242,7 @@ export function HelpContent() {
                   <NavigationCard
                     href="/help?section=configuration"
                     title="Configuration"
-                    description="Learn how to customize Interview Coder to your needs"
+                    description="Learn how to customize Interview Helper to your needs"
                   />
                   <NavigationCard
                     href="/help?section=undetectability"

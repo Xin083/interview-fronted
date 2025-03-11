@@ -310,7 +310,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
               >
                 <Image
                   src="/logo.svg"
-                  alt="Interview Coder"
+                  alt="Interview Helper"
                   width={20}
                   height={20}
                   className="w-5 h-5 rounded-full"
@@ -321,7 +321,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
                     opacity: Math.max(0, 1 - scrollProgress * 2)
                   }}
                 >
-                  Interview Coder
+                  Interview Helper
                 </span>
               </Link>
 

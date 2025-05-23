@@ -82,7 +82,7 @@ export default function SignUpForm() {
     setIsLoading(true)
     setError("")
     try {
-      const redirectUrl = `${window.location.origin}/auth/callback${
+      const redirectUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || window.location.origin}/auth/callback${
         next ? `?next=${encodeURIComponent(next)}` : ""
       }`
 
@@ -114,7 +114,7 @@ export default function SignUpForm() {
           <div className="flex flex-col items-center justify-center space-y-6">
             <Image
               src="/logo.svg"
-              alt="Interview Helper"
+              alt="Interview Coder"
               width={48}
               height={48}
               className="rounded-full"

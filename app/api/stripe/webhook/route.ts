@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   // Use the Stripe API version you need
-  apiVersion: "2024-12-18.acacia"
+  apiVersion: "2024-12-18.acacia",
 })
 
 // Create a Supabase client with admin privileges
@@ -20,7 +20,7 @@ const supabase = createClient(
 )
 
 // We assume you have two secrets set in your .env file:
-// STRIPE_WEBHOOK_SECRET for interviewcoder.co
+// STRIPE_WEBHOOK_SECRET for interviewcoder.cn
 // STRIPE_WEBHOOK_SECRET_SECONDARY for interviewcoder.net
 export async function POST(req: Request) {
   const body = await req.text()
@@ -47,8 +47,8 @@ export async function POST(req: Request) {
   }
   // Production domains
   else if (
-    hostname.includes("interviewcoder.net") ||
-    host?.includes("interviewcoder.net")
+    hostname.includes("interviewcoder.cn") ||
+    host?.includes("interviewcoder.cn")
   ) {
     webhookSecret = process.env.STRIPE_WEBHOOK_SECRET_SECONDARY!
     console.log("Using .NET webhook secret")
@@ -288,16 +288,9 @@ export async function POST(req: Request) {
 
           if (subscriptionError) {
             console.error("Error upserting subscription:", subscriptionError)
-            return NextResponse.json(
-              { error: "Error upserting subscription" },
-              { status: 500 }
-            )
+          } else {
+            console.log("Successfully created/updated subscription for user:", userId)
           }
-
-          console.log(
-            "Successfully created/updated subscription for user:",
-            userId
-          )
           return NextResponse.json({ received: true })
         }
       } else {
@@ -407,13 +400,9 @@ export async function POST(req: Request) {
 
       if (subscriptionError) {
         console.error("Error upserting subscription:", subscriptionError)
-        return NextResponse.json(
-          { error: "Error upserting subscription" },
-          { status: 500 }
-        )
+      } else {
+        console.log("Successfully processed subscription for user:", userId)
       }
-
-      console.log("Successfully processed subscription for user:", userId)
       return NextResponse.json({ received: true })
     } else {
       console.log("Unhandled event type:", event.type)

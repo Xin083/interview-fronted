@@ -78,6 +78,7 @@ export function useUser() {
       ) {
         // Invalidate and refetch user data
         queryClient.invalidateQueries({ queryKey: ["user"] })
+        queryClient.invalidateQueries({ queryKey: ["user-nav"] })
       }
     })
 

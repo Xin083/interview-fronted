@@ -1,6 +1,6 @@
 # Affiliate Tracking with First Promoter
 
-This document outlines how affiliate tracking is implemented in the Interview Helper webapp using First Promoter.
+This document outlines how affiliate tracking is implemented in the Interview Coder webapp using First Promoter.
 
 ## Overview
 
@@ -10,7 +10,7 @@ The system tracks affiliate referrals and awards a 50% commission to affiliates 
 
 1. **Affiliate Link Format**: Affiliate links include a `fpr` parameter with the affiliate's unique code:
    ```
-   https://interviewcoder.co/?fpr=AFFILIATE_CODE
+   https://interviewcoder.cn/?fpr=AFFILIATE_CODE
    ```
 
 2. **Tracking Script**: The First Promoter tracking script is added to the site's layout, which automatically handles most of the tracking functionality.
@@ -40,7 +40,7 @@ The system tracks affiliate referrals and awards a 50% commission to affiliates 
 
 To test the affiliate tracking:
 
-1. Open this link in an incognito window: `https://interviewcoder.co?fpr=test4z8yt1oa&test_mode=1`
+1. Open this link in an incognito window: `https://interviewcoder.cn?fpr=test4z8yt1oa&test_mode=1`
 2. Complete a purchase of at least $0.50 (you can use test mode or apply a coupon)
 3. Wait 1-2 minutes for the sale to be processed
 4. Return to the First Promoter dashboard and check if the conversion was tracked

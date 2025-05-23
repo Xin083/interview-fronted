@@ -72,10 +72,14 @@ function CheckoutPageContent() {
       data: { subscription }
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
+      // If we have a redirect parameter and the user just signed in
+      if (session && searchParams.get('redirect')) {
+        router.push(searchParams.get('redirect') || '/checkout')
+      }
     })
 
     return () => subscription.unsubscribe()
-  }, [])
+  }, [searchParams, router])
 
   useEffect(() => {
     async function validateToken() {
@@ -300,7 +304,7 @@ function CheckoutPageContent() {
       <div className="max-w-5xl mx-auto px-4 pt-28 pb-12">
         <div className="mb-8">
           <h2 className="text-base lg:text-lg font-medium text-[#999999] mb-2">
-            Subscribe to Interview Helper
+            Subscribe to Interview Coder
           </h2>
           <div className="text-4xl lg:text-5xl font-bold mb-6">
             Choose your plan

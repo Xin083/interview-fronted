@@ -30,12 +30,39 @@ export default function SignInForm() {
         password
       })
       if (error) throw error
-      router.push(next || "/")
+
+      // Add button to open desktop app
+      const openDesktopApp = () => {
+        window.location.href = "interview-coder://open"
+      }
+
+      // 登录成功后跳转
+      router.replace(next || "/")
+      return (
+        <div className="min-h-screen bg-black">
+          <Navbar />
+          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] px-4">
+            <div className="w-full max-w-md space-y-8 p-4 sm:p-8">
+              <div className="flex flex-col items-center justify-center space-y-6">
+                <h2 className="text-2xl font-semibold text-white">
+                  {t('auth.loginSuccess')}
+                </h2>
+                <button
+                  onClick={openDesktopApp}
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#1A1A1A] hover:bg-[#242424] text-white rounded-2xl border border-white/10 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                >
+                  {t('auth.openDesktopApp')}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
     } catch (error) {
       console.error("Error signing in with email:", error)
       setError(t('auth.errorSigningIn'))
       setShake(true)
-      setTimeout(() => setShake(false), 500) // Remove shake class after animation
+      setTimeout(() => setShake(false), 500)
     } finally {
       setIsLoading(false)
     }
@@ -44,7 +71,7 @@ export default function SignInForm() {
   async function signInWithGoogle() {
     setIsLoading(true)
     try {
-      const redirectUrl = `${window.location.origin}/auth/callback${
+      const redirectUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || window.location.origin}/auth/callback${
         next ? `?next=${encodeURIComponent(next)}` : ""
       }`
 
@@ -73,7 +100,7 @@ export default function SignInForm() {
           <div className="flex flex-col items-center justify-center space-y-6">
             <Image
               src="/logo.svg"
-              alt="Interview Helper"
+              alt="Interview Coder"
               width={48}
               height={48}
               className="rounded-full"
@@ -170,6 +197,13 @@ export default function SignInForm() {
                 <p className="text-center text-sm text-[#989898]">
                   {t('auth.dontHaveAccount')}
                 </p>
+              </Link>
+              <Link href="/forgot-password" className="px-2 py-1 text-sm text-gray-400">
+                <div className="relative flex justify-center text-xs uppercase">
+                  <span className="bg-black px-2 text-[#989898]">
+                    Forgot Password?
+                  </span>
+                </div>
               </Link>
             </div>
           </div>

@@ -164,7 +164,7 @@ export default function HelpCenterContent() {
             <div id="getting-started">
               <Header
                 title="Getting Started"
-                description="Welcome to Interview Helper. This guide will help you get up and running quickly."
+                description="Welcome to Interview Coder. This guide will help you get up and running quickly."
               />
 
               <div className="prose prose-invert max-w-none">
@@ -172,7 +172,7 @@ export default function HelpCenterContent() {
                   <SectionHeading>Quick Start Steps</SectionHeading>
                   <ol className="mt-4 space-y-3 text-sm text-zinc-300">
                     <li>
-                      Install the Interview Helper app in the download link below
+                      Install the Interview Coder app in the download link below
                       (MacOS only)
                     </li>
                     <li>Move the app into your Applications folder</li>
@@ -212,7 +212,7 @@ export default function HelpCenterContent() {
                       <DropdownMenuContent>
                         <DropdownMenuItem>
                           <Link
-                            href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-arm64.dmg"
+                            href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-arm64.dmg"
                             className="w-full"
                           >
                             Download for Mac (Apple Silicon)
@@ -220,7 +220,7 @@ export default function HelpCenterContent() {
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link
-                            href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-x64.dmg"
+                            href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-x64.dmg"
                             className="w-full"
                           >
                             Download for Mac (Intel)
@@ -248,7 +248,7 @@ export default function HelpCenterContent() {
                   <NavigationCard
                     href="/help?section=configuration"
                     title="Configuration"
-                    description="Learn how to customize Interview Helper to your needs"
+                    description="Learn how to customize Interview Coder to your needs"
                   />
                   <NavigationCard
                     href="/help?section=undetectability"
@@ -277,7 +277,7 @@ export default function HelpCenterContent() {
             <div id="configuration">
               <Header
                 title="Configuration"
-                description="Customize Interview Helper to match your needs and preferences."
+                description="Customize Interview Coder to match your needs and preferences."
               />
 
               <div className="prose prose-invert max-w-none">
@@ -304,7 +304,7 @@ export default function HelpCenterContent() {
             <div id="undetectability">
               <Header
                 title="Undetectability"
-                description="Learn how Interview Helper remains completely undetectable during interviews."
+                description="Learn how Interview Coder remains completely undetectable during interviews."
               />
 
               <div className="prose prose-invert max-w-none space-y-8">
@@ -312,10 +312,10 @@ export default function HelpCenterContent() {
                   <p className="text-sm text-zinc-300">
                     Coding interview platforms employ various detection methods
                     to prevent cheating. Here's how they try to detect tools
-                    like Interview Helper, and how we counter each measure.
+                    like Interview Coder, and how we counter each measure.
                   </p>
                   <p className="text-sm font-medium text-emerald-400">
-                    Interview Helper has never been detected in our real
+                    Interview Coder has never been detected in our real
                     interview tests by any coding platform.
                   </p>
                 </div>
@@ -327,7 +327,7 @@ export default function HelpCenterContent() {
                     </h2>
                     <p className="text-sm text-zinc-400">
                       Below are the common methods platforms use to detect
-                      cheating, and how Interview Helper makes each one
+                      cheating, and how Interview Coder makes each one
                       ineffective. Each red box shows a detection method, with
                       our counter-measure shown in green below it.
                     </p>
@@ -449,7 +449,7 @@ export default function HelpCenterContent() {
                           </div>
                           <p className="text-sm text-emerald-300">
                             Interviewers will ask you to explain your solutions.
-                            Interview Helper comes with every line of code
+                            Interview Coder comes with every line of code
                             commented, as well as a few sentences of thoughts
                             that will naturally lead you to a solution.
                           </p>
@@ -580,7 +580,7 @@ export default function HelpCenterContent() {
                             </svg>
                           </div>
                           <p className="text-sm text-emerald-300">
-                            Interview Helper is designed so that when you toggle
+                            Interview Coder is designed so that when you toggle
                             visibility with ⌘ +B, your cursor will stay focused,
                             and your active tab will not change at all.
                           </p>
@@ -751,7 +751,7 @@ export default function HelpCenterContent() {
                     </h3>
                     <p className="mt-2 text-sm text-zinc-300">
                       Due to an unresolved bug in Electron, some WebRTC-based
-                      screen-sharing software may be able to see Interview Helper
+                      screen-sharing software may be able to see Interview Coder
                       on MacOS while sharing your full screen. To see if you're
                       affected, download the application without subscribing and
                       try to screen-share. If it shows, then you're affected.
@@ -770,7 +770,7 @@ export default function HelpCenterContent() {
             <div id="cancel-subscription">
               <Header
                 title="Cancel Subscription"
-                description="Learn how to cancel your Interview Helper subscription."
+                description="Learn how to cancel your Interview Coder subscription."
               />
 
               <div className="prose prose-invert max-w-none space-y-8">

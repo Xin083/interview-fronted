@@ -254,7 +254,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
     return (
       <>
         {/* <GitHubStarsButton githubData={githubData} isLoading={githubLoading} /> */}
-        <LanguageToggle />
+        {/*<LanguageToggle />*/}
         <Link href="/signin">
           <Button variant="ghost" className="text-[#989898] hover:text-white">
             {t("nav.login")}
@@ -310,7 +310,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
               >
                 <Image
                   src="/logo.svg"
-                  alt="Interview Helper"
+                  alt="Interview Coder"
                   width={20}
                   height={20}
                   className="w-5 h-5 rounded-full"
@@ -321,7 +321,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
                     opacity: Math.max(0, 1 - scrollProgress * 2)
                   }}
                 >
-                  Interview Helper
+                  Interview Coder
                 </span>
               </Link>
 

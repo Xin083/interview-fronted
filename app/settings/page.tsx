@@ -288,7 +288,7 @@ export default function SettingsPage() {
                           Credits
                         </h2>
                         <p className="text-[13px] lg:text-[15px] text-gray-400 mb-4 lg:mb-6">
-                          Purchase additional credits to use Interview Helper.
+                          Purchase additional credits to use Interview Coder.
                         </p>
                         <div className="bg-white/5 rounded-xl border border-gray-800">
                           <div className="p-4 lg:p-6">

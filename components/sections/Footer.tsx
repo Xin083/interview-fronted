@@ -25,13 +25,13 @@ export function Footer() {
             <div className="flex items-center justify-left gap-6">
               <Image
                 src="/logo.svg"
-                alt="Interview Helper"
+                alt="Interview Coder"
                 width={24}
                 height={24}
                 className="w-6 h-6 rounded-full"
               />
               <span className="text-neutral-400 font-bold text-xl">
-                INTERVIEW HELPER
+                INTERVIEW CODER
               </span>
             </div>
 

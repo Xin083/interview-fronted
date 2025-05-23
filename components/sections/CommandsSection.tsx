@@ -55,14 +55,17 @@ export function CommandsSection() {
     <section className="py-24 relative">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 tracking-tight">
+          {/*<h2 className="text-4xl font-bold mb-4 tracking-tight">
             <span className="white-gradient font-inter">{t('commands.title')}</span>
+          </h2>*/}
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{textShadow: "0 0 20px rgba(255, 255, 255, 0.3)"}}>
+            <span className="white-gradient">{t('commands.title')}</span>
           </h2>
-          <p className="text-neutral-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg mb-10 text-center max-w-2xl mx-auto">
             {t('commands.subtitle')}
           </p>
         </div>
-        <HoverEffect items={commands} />
+        <HoverEffect items={commands}/>
       </div>
     </section>
   )

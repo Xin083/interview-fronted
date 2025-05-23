@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     } = await supabase.auth.getSession()
 
     if (!session) {
-      return NextResponse.json({ error: "Not authenticated" }, { status: 401 })
+      return NextResponse.json({ error: "Not authenticated", code: "AUTH_REQUIRED" }, { status: 401 })
     }
 
     const userId = session.user.id
@@ -113,6 +113,11 @@ export async function POST(req: Request) {
         fp_tid: fpTid,
         subscription_type: subscriptionType
       });
+      
+      console.log("subscriptionType:", subscriptionType);
+      console.log("priceId:", priceId);
+      console.log("customerId:", customerId);
+      console.log("userId:", userId);
       
       const checkoutSession = await stripe.checkout.sessions.create({
         customer: customerId,

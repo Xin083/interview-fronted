@@ -368,10 +368,10 @@ const UndetectabilitySection = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 tracking-tight">
-            <span className="white-gradient font-inter">{t('undetectability.title')}</span>
+            <span className="white-gradient font-inter">{t('undetectability.name')}</span>
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
-            {t('undetectability.subtitle')}
+            {t('undetectability.sectionTitle')}
           </p>
         </div>
 

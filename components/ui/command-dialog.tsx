@@ -19,10 +19,10 @@ const HELP_SECTIONS = [
       {
         id: "getting-started",
         title: "Getting Started",
-        fullText: `Welcome to Interview Helper. This guide will help you get up and running quickly.
+        fullText: `Welcome to Interview Coder. This guide will help you get up and running quickly.
 
 Quick Start Steps
-• Install the Interview Helper app in the download link below (MacOS only)
+• Install the Interview Coder app in the download link below (MacOS only)
 • Move the app into your Applications folder
 • Sign up for an account or log in on the InterviewCoder website
 • Open the app and log in with your account
@@ -32,7 +32,7 @@ Quick Start Steps
       {
         id: "configuration",
         title: "Language Configuration",
-        fullText: `Customize Interview Helper to match your needs and preferences.
+        fullText: `Customize Interview Coder to match your needs and preferences.
 
 Application Settings
 You can manage your language preferences in the settings page.
@@ -41,11 +41,11 @@ Currently, we offer support for Python, Java, Javascript, Go, C++, Kotlin, and S
       {
         id: "undetectability",
         title: "Undetectability",
-        fullText: `Learn how Interview Helper remains completely undetectable during interviews.
+        fullText: `Learn how Interview Coder remains completely undetectable during interviews.
 
-Coding interview platforms employ various detection methods to prevent cheating. Here's how they try to detect tools like Interview Helper, and how we counter each measure.
+Coding interview platforms employ various detection methods to prevent cheating. Here's how they try to detect tools like Interview Coder, and how we counter each measure.
 
-Interview Helper has never been detected in our real interview tests by any coding platform.`
+Interview Coder has never been detected in our real interview tests by any coding platform.`
       }
     ]
   },
@@ -55,7 +55,7 @@ Interview Helper has never been detected in our real interview tests by any codi
       {
         id: "cancel-subscription",
         title: "Cancel Subscription",
-        fullText: `Learn how to cancel your Interview Helper subscription.
+        fullText: `Learn how to cancel your Interview Coder subscription.
 
 How to Cancel
 You can cancel your subscription anytime from the settings page. After cancellation:

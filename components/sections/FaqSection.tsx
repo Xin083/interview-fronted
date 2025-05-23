@@ -110,7 +110,7 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative ">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 tracking-tight">
@@ -121,7 +121,7 @@ export function FaqSection() {
           </p>
         </div>
 
-        <div className="mx-auto rounded-2xl border border-neutral-700/40 divide-y divide-neutral-700/40 bg-neutral-900/20 backdrop-blur-sm">
+        <div className="mx-auto rounded-2xl border border-neutral-700/40 divide-y divide-neutral-700/40 bg-neutral-900/20 backdrop-blur-sm max-w-4xl">
           {faqs.map((faq, index) => (
             <FaqItem
               key={index}
@@ -164,7 +164,7 @@ export function FaqSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="text-black gap-2 text-sm font-medium h-10 w-[280px] md:w-[320px] bg-primary hover:bg-primary/90">
+                  <Button className="text-black text-lg gap-2 font-medium h-10 w-[280px] md:w-[320px] bg-primary hover:bg-primary/90">
                     <div className="flex items-center gap-2">
                       <Image
                         src="/apple.svg"
@@ -180,7 +180,7 @@ export function FaqSection() {
                 <DropdownMenuContent>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-arm64.dmg"
+                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-arm64.dmg"
                       className="w-full"
                     >
                       {t("hero.macSilicon")}
@@ -188,7 +188,7 @@ export function FaqSection() {
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-x64.dmg"
+                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-x64.dmg"
                       className="w-full"
                     >
                       {t("hero.macIntel")}
@@ -198,10 +198,14 @@ export function FaqSection() {
               </DropdownMenu>
               <Button
                 variant="outline"
-                className="gap-2 text-sm font-medium h-10 w-[280px] md:w-[320px] border-neutral-700 hover:bg-neutral-800"
+                className="gap-2 text-sm font-medium h-10 w-[280px] md:w-[320px] border-neutral-700 hover:bg-neutral-800
+                  rounded-full text-lg font-semibold
+                  shadow-[0_0_24px_4px_rgba(255,255,0,0.25)]
+                  ring-2 ring-yellow-200/60
+                  transition-all"
               >
                 <Link
-                  href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview.Coder-Windows-1.0.19.exe"
+                  href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview.Coder-Windows-1.0.19.exe"
                   className="flex items-center gap-2"
                 >
                   <Image

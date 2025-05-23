@@ -61,10 +61,10 @@ export const CompanySection = () => {
     <TooltipProvider delayDuration={300}>
       <div className="flex flex-col items-center justify-center py-12 lg:py-20">
         <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white white-gradient py-2">
+          <h2 className="text-6xl font-bold text-white white-gradient py-2 select-none">
             {t('company.title')}
           </h2>
-          <p className="text-lg leading-8 text-[#999999]">
+          <p className="text-2xl leading-8 text-[#999999] select-none">
             {t('company.subtitle')}
           </p>
         </div>
@@ -101,7 +101,7 @@ export const CompanySection = () => {
               </Tooltip>
             ))}
           </div>
-          <p className="text-center text-sm text-gray-500 mt-8 px-4">
+          <p className="text-center text-lg text-gray-500 mt-8 px-4 select-none">
             {/* Split the disclaimer text to properly handle the notice link */}
             {language === 'en' ? (
               <>

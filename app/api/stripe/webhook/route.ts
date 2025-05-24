@@ -288,16 +288,9 @@ export async function POST(req: Request) {
 
           if (subscriptionError) {
             console.error("Error upserting subscription:", subscriptionError)
-            return NextResponse.json(
-              { error: "Error upserting subscription" },
-              { status: 500 }
-            )
+          } else {
+            console.log("Successfully created/updated subscription for user:", userId)
           }
-
-          console.log(
-            "Successfully created/updated subscription for user:",
-            userId
-          )
           return NextResponse.json({ received: true })
         }
       } else {
@@ -407,13 +400,9 @@ export async function POST(req: Request) {
 
       if (subscriptionError) {
         console.error("Error upserting subscription:", subscriptionError)
-        return NextResponse.json(
-          { error: "Error upserting subscription" },
-          { status: 500 }
-        )
+      } else {
+        console.log("Successfully processed subscription for user:", userId)
       }
-
-      console.log("Successfully processed subscription for user:", userId)
       return NextResponse.json({ received: true })
     } else {
       console.log("Unhandled event type:", event.type)

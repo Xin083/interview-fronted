@@ -2,7 +2,7 @@
 export const API_BASE_URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://www.interviewcoder.co"
+    : "https://www.interviewcoder.cn"
 
 export const TIMEOUT_DURATION = 300000 // 1 minute in milliseconds
 

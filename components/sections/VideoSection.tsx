@@ -38,7 +38,28 @@ export const VideoSection = () => {
               {t("misc.watchMe")}
               <br />
               <br />
-              {language === "en" ? (
+
+            </p>
+          </motion.div>
+
+          <video
+            ref={videoRef}
+            className="w-full rounded-xl shadow-xl"
+            poster="/videos/amazon-thumbnail.jpg"
+            controls
+            playsInline
+            preload="metadata"
+            controlsList="nodownload"
+            disablePictureInPicture
+            disableRemotePlayback
+          >
+            <source src="/videos/amazon.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="mt-8 text-center text-xl  max-w-3xl select-none text-md sm:text-lg text-[#999999]">
+
+            {language === "en" ? (
                 <>
                   {t("misc.skeptical")}{" "}
                   <a
@@ -63,22 +84,7 @@ export const VideoSection = () => {
                   ।
                 </>
               )}
-            </p>
-          </motion.div>
-
-          <video
-            ref={videoRef}
-            className="w-full rounded-xl shadow-xl"
-            controls
-            playsInline
-            preload="metadata"
-            controlsList="nodownload"
-            disablePictureInPicture
-            disableRemotePlayback
-          >
-            <source src="/videos/amazon.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          </div>
         </div>
       </motion.div>
     </section>

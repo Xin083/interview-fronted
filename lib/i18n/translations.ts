@@ -11,7 +11,7 @@ export const translations = {
       pricing: "Pricing",
       help: "Help",
       login: "Login",
-      signup: "Sign Up",
+      signup: "Sign up",
       dashboard: "Dashboard",
       settings: "Settings",
       logout: "Log out",
@@ -20,9 +20,9 @@ export const translations = {
 
     // Hero Section
     hero: {
-      tagline: "F*ck Leetcode.",
+      tagline: "AI for Leetcode Interviews",
       subtitle:
-        "Interview Coder is an invisible AI to solve any coding problem.",
+        "Interview Coder is the ultimate AI cheating tool for Leetcode coding interviews.",
       downloadMac: "Download for Mac",
       downloadWindows: "Download for Windows",
       macSilicon: "Download for Mac (Apple Silicon)",
@@ -167,9 +167,11 @@ export const translations = {
 
     // Undetectability Section
     undetectability: {
+      name: "Undetectability",
       title: "How is it undetectable?",
       subtitle:
         "Interview Coder has the most robust undetectability features on the planet.",
+      sectionTitle: "Here's how we ensure that Interview Coder is undetectable during technical interviews.",
       screenSharing: "Screen Sharing Detection",
       screenSharingDesc:
         "Our app is completely invisible to screen sharing software and screenshots on platforms like Zoom, Google Meet, Hackerrank, and Coderpad.",
@@ -192,7 +194,8 @@ export const translations = {
       watchMe:
         "Watch me get an offer from Amazon using Interview Coder. Throughout this whole video, you'll see me use Interview Coder for both the OA and the final round.",
       skeptical: "Skeptical? Watch the entire, uncut technical interview",
-      pro: "PRO"
+      pro: "PRO",
+      free: "Free",
     },
 
     // Subscribe Page

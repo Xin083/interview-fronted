@@ -114,6 +114,11 @@ export async function POST(req: Request) {
         subscription_type: subscriptionType
       });
       
+      console.log("subscriptionType:", subscriptionType);
+      console.log("priceId:", priceId);
+      console.log("customerId:", customerId);
+      console.log("userId:", userId);
+      
       const checkoutSession = await stripe.checkout.sessions.create({
         customer: customerId,
         client_reference_id: userId,

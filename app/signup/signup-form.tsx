@@ -82,7 +82,7 @@ export default function SignUpForm() {
     setIsLoading(true)
     setError("")
     try {
-      const redirectUrl = `${window.location.origin}/auth/callback${
+      const redirectUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || window.location.origin}/auth/callback${
         next ? `?next=${encodeURIComponent(next)}` : ""
       }`
 

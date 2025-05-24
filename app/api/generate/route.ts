@@ -5,7 +5,7 @@ import { withTimeout, type ProblemInfo } from "../config"
 import { z } from "zod"
 import { verifyAuth } from "../auth"
 
-export const maxDuration = 300
+export const maxDuration = 60
 
 const SolutionResponse = z.object({
   thoughts: z.array(z.string()),

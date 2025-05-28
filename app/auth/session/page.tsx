@@ -13,9 +13,8 @@ export default function AuthSessionPage() {
         router.replace("/signin?next=/auth/session");
       } else {
         const accessToken = session.access_token;
-        const referrer = session.user.id; // 推荐
-        window.location.href = `interviewcoder://login?t=${accessToken}&r=${referrer}`;
-
+        const refresh_token = session.refresh_token; // 推荐
+        window.location.href = `interviewcoder://login?t=${accessToken}&r=${refresh_token}`;
       }
     });
   }, [router]);
@@ -39,8 +38,8 @@ export default function AuthSessionPage() {
             const { data: { session } } = await supabase.auth.getSession();
             if (session) {
               const accessToken = session.access_token;
-              const referrer = session.user.id; // 或你需要的其他值
-              window.location.href = `interviewcoder://login?t=${accessToken}&r=${referrer}`;
+              const refresh_token = session.refresh_token; // 或你需要的其他值
+              window.location.href = `interviewcoder://login?t=${accessToken}&r=${refresh_token}`;
             }
           }}
         >

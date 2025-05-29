@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { alipay } from "@/lib/alipay/client";
+import { config } from "@/lib/alipay/client";
 import { createClient } from "@/lib/supabase/server";
-const { v4: uuidv4 } = require('uuid');
-
+import { v4 as uuidv4 } from 'uuid';
+/* eslint-disable @typescript-eslint/no-require-imports */
 export async function POST(req: Request) {
   try {
     const { subscriptionType = 'monthly' } = await req.json();
@@ -24,6 +24,10 @@ export async function POST(req: Request) {
     
     // 生成订单号
     const outTradeNo = `ORDER_${uuidv4()}`;
+    
+    // 仅在服务端 require alipay-sdk
+    const AlipaySdk = require('alipay-sdk');
+    const alipay = new AlipaySdk(config);
     
     // 创建支付宝订单
     const result = await alipay.exec('alipay.trade.page.pay', {

@@ -1,5 +1,3 @@
-const AlipaySdk = require('alipay-sdk');
-
 interface AlipayConfig {
   appId: string;
   privateKey: string;
@@ -16,4 +14,4 @@ const config: AlipayConfig = {
     : 'https://openapi.alipaydev.com/gateway.do',
 };
 
-export const alipay = new AlipaySdk(config); 
+export { config }; 

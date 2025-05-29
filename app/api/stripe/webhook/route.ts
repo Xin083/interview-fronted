@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   // Use the Stripe API version you need
-  apiVersion: "2024-12-18.acacia"
+  apiVersion: "2024-12-18.acacia",
 })
 
 // Create a Supabase client with admin privileges

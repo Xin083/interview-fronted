@@ -22,6 +22,7 @@ export default function PricingPage() {
     }
 
     try {
+      // First check if user is authenticated
       const response = await fetch('/api/stripe/create-checkout', {
         method: 'POST',
         headers: {
@@ -31,6 +32,12 @@ export default function PricingPage() {
       });
 
       const data = await response.json();
+
+      if (response.status === 401 && data.code === 'AUTH_REQUIRED') {
+        // User is not authenticated, redirect to signin
+        router.push('/signin?redirect=/checkout');
+        return;
+      }
 
       if (response.ok && data.url) {
         // Redirect to Stripe Checkout

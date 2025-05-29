@@ -72,10 +72,14 @@ function CheckoutPageContent() {
       data: { subscription }
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
+      // If we have a redirect parameter and the user just signed in
+      if (session && searchParams.get('redirect')) {
+        router.push(searchParams.get('redirect') || '/checkout')
+      }
     })
 
     return () => subscription.unsubscribe()
-  }, [])
+  }, [searchParams, router])
 
   useEffect(() => {
     async function validateToken() {

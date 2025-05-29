@@ -12,7 +12,7 @@ export async function POST(req: Request) {
     } = await supabase.auth.getSession()
 
     if (!session) {
-      return NextResponse.json({ error: "Not authenticated" }, { status: 401 })
+      return NextResponse.json({ error: "Not authenticated", code: "AUTH_REQUIRED" }, { status: 401 })
     }
 
     const userId = session.user.id

@@ -24,6 +24,50 @@ export default function Home() {
   const [showBanner, setShowBanner] = useState(false)
 
   useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 50);
+    }
+  }, []);
+
+  // useEffect(() => {
+  //   function scrollToHash() {
+  //     if (window.location.hash) {
+  //       const id = window.location.hash.replace('#', '');
+  //       // 尝试多次，直到元素出现
+  //       let tries = 0;
+  //       const maxTries = 10;
+  //       const tryScroll = () => {
+  //         const el = document.getElementById(id);
+  //         if (el) {
+  //           el.scrollIntoView({ behavior: "smooth" });
+  //         } else if (tries < maxTries) {
+  //           tries++;
+  //           setTimeout(tryScroll, 50);
+  //         }
+  //       };
+  //       tryScroll();
+  //     }
+  //   }
+  //
+  //   // 首次加载
+  //   scrollToHash();
+  //
+  //   // hash 变化时也滚动
+  //   window.addEventListener('hashchange', scrollToHash);
+  //
+  //   return () => {
+  //     window.removeEventListener('hashchange', scrollToHash);
+  //   };
+  // }, []);
+
+
+  useEffect(() => {
     // Check if banner was previously dismissed
     const isDismissed = localStorage.getItem(BANNER_DISMISSED_KEY)
     if (!isDismissed) {

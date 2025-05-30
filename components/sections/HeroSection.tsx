@@ -19,10 +19,10 @@ export const HeroSection = () => {
   return (
     <main className="relative min-h-[90vh] overflow-hidden flex flex-col items-center justify-center pt-36">
       {/* <WingsBackground /> */}
-      <button className="relative inline-flex h-7 overflow-hidden rounded-full p-[1px]  mb-8">
+      <button className="relative inline-flex h-7 overflow-hidden rounded-full p-[1px]  mb-9">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FFFF00_0%,transparent_50%,#FFFF00_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-          <a href="#" className="inline-flex h-full px-3 py-1 w-full cursor-pointer items-center justify-center rounded-full bg-stone-900 backdrop-blur-3xl">
+          <a href="#" className="text-lg inline-flex h-full px-3 py-1 w-full cursor-pointer items-center justify-center rounded-full bg-stone-900 backdrop-blur-3xl">
             This still works.
             <span className="ml-1 font-semibold text-primary">Here's how we know.
               <span aria-hidden="true"> -&gt;</span>

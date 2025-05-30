@@ -101,9 +101,9 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
   const { t } = useLanguage()
   const [highlight, setHighlight] = useState<{ left: number; width: number } | null>(null)
   const navRef = useRef<HTMLDivElement>(null)
-  const floatZone = 10; // px
-  const maxDown = 30;   // px
-  const [navOffset, setNavOffset] = useState(10)
+  const floatZone = 0; // px
+  const maxDown = 12;   // px
+  const [navOffset, setNavOffset] = useState(0)
   const lastScrollY = useRef(0)
 
   const { data, isLoading: loading } = useQuery({
@@ -165,8 +165,8 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
     const handleScroll = () => {
       const y = window.scrollY;
       if (y <= 0) {
-        setNavOffset(10);
-      } else if (y > 10 && y < floatZone) {
+        setNavOffset(0);
+      } else if (y > 0 && y < floatZone) {
         setNavOffset((y / floatZone) * maxDown);
       } else {
         setNavOffset(maxDown);
@@ -226,16 +226,20 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
           /> */}
           {/*<LanguageToggle />*/}
           {!isSubscribed && (
-              <Button
-                onClick={() => router.push("/checkout")}
-                className="relative"
-              >
-              <Lock className="w-4 h-4 mr-2 text-black" />
-              {t("nav.signup")}
-              </Button>
+              // <Button
+              //   onClick={() => router.push("/checkout")}
+              //   className="relative"
+              // >
+              //   <Lock className="w-4 h-4 mr-2 text-black" />
+              //   {t("nav.signup")}
+              // </Button>
               // <div
               //     className="absolute -top-1 -right-1 bg-primary text-black text-[6px] font-semibold px-2.5 rounded-full">
 
+                <div
+                    className="absolute -top-1 -right-3 bg-primary text-black text-[6px] font-semibold px-1.5 rounded-full">
+                  {t("misc.free")}
+                </div>
                 )}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -248,16 +252,12 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
                             {user.email?.slice(0, 2).toUpperCase()}
                           </AvatarFallback>
                         </Avatar>
-                        {isSubscribed ? (
+                        {isSubscribed && (
                             <div
                                 className="absolute -top-1 -right-3 bg-primary text-black text-[6px] font-semibold px-1.5 rounded-full">
                               {t("misc.pro")}
                             </div>
-                        ) : (
-                            <div className="absolute -top-1 -right-3 bg-gray-500 text-white text-[10px] font-semibold px-1.5 rounded-full">
-                                {t('misc.free')}
-                            </div>
-                            )}
+                        )}
                       </div>
                     </button>
                   </DropdownMenuTrigger>
@@ -317,18 +317,18 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
     <>
       <nav
         className={cn(
-          "fixed left-1/2 z-50 -translate-x-1/2 flex items-center transition-all duration-700 backdrop-blur-xl",//top-3
-          "w-[1000px] h-[40px] rounded-full",
-          navOffset > 10
+          "fixed left-1/2 top-3 z-50 -translate-x-1/2 flex items-center transition-all duration-700 backdrop-blur-xl",
+          "w-[1000px] h-13 rounded-full",
+          navOffset > 0
             ? "border border-white/10 shadow-lg"
             : "border-transparent shadow-none"
         )}
         style={{
           transform: `translate(-50%, ${navOffset}px)`,
-          background: navOffset === 10 ? "rgba(0,0,0,0.0)" : "hero-gradient"
+          background: navOffset === 0 ? "rgba(0,0,0,0.0)" : "rgba(0,0,0,0.8)"
         }}
       >
-        <div className="flex-1 flex items-center justify-between pl-3 pr-2 w-full">
+        <div className="flex-1 flex items-center justify-between pl-3 pr-8 w-full">
           <Link
             href="/"
             className="text-white hover:text-white/80 transition-colors flex items-center gap-2 shrink-0"
@@ -448,7 +448,7 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
                 {t("nav.help")}
               </Link>
               {!loading && (
-                <div className="pt-2 border-t border-white/10 w-fit ">
+                <div className="pt-2 border-t border-white/10 w-fit">
                   {/* <GitHubStarsButton
                     githubData={githubData}
                     isLoading={githubLoading}

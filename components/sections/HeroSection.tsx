@@ -86,12 +86,12 @@ export const HeroSection = () => {
               "
             >
               <DropdownMenuItem>
-                <Link href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-arm64.dmg" className="w-full">
+                <Link href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-e8d74b10454b5323f713/Interview-Coder-arm64.dmg" className="w-full">
                   {t("hero.macSilicon")}
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview-Coder-x64.dmg" className="w-full">
+                <Link href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-e8d74b10454b5323f713/Interview-Coder-x64.dmg" className="w-full">
                   {t("hero.macIntel")}
                 </Link>
               </DropdownMenuItem>
@@ -109,7 +109,7 @@ export const HeroSection = () => {
             "
           >
             <Link
-              href="https://github.com/ibttf/interview-coder/releases/download/v1.0.19/Interview.Coder-Windows-1.0.19.exe"
+              href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-fd6dcf26e68783bf6e35/Interview.Coder-Windows-1.0.21.exe"
               className="flex items-center gap-2"
             >
               <Image src="/windows.svg" alt="Windows" width={20} height={20} className="w-6 h-6" />

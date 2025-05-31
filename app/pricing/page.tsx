@@ -123,7 +123,7 @@ export default function PricingPage() {
             </div>
             <ul className="text-gray-300 text-base space-y-3 mb-8">
               <li className="flex items-center gap-2">
-                <span className="text-yellow-300 text-lg">ⓘ</span>
+                <span className="text-yellow-300 text-lg">✔ </span>
                 Unlimited yearly usage
               </li>
               <li className="flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function PricingPage() {
                 Solving and debugging
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-yellow-300 text-lg">ⓘ</span>
+                <span className="text-yellow-300 text-lg">✔ </span>
                 Most powerful agent models
               </li>
               <li className="flex items-center gap-2">

@@ -226,16 +226,16 @@ export default function Navbar({ showBanner = false }: NavbarProps) {
           /> */}
           {/*<LanguageToggle />*/}
           {!isSubscribed && (
-              <Button
-                onClick={() => router.push("/checkout")}
-                className="relative"
-              >
-              <Lock className="w-4 h-4 mr-2 text-black" />
-              {t("nav.signup")}
-              </Button>
+              // <Button
+              //   onClick={() => router.push("/checkout")}
+              //   className="relative"
+              // >
+              // <Lock className="w-4 h-4 mr-2 text-black" />
+              // {t("nav.signup")}
+              // </Button>
               // <div
               //     className="absolute -top-1 -right-1 bg-primary text-black text-[6px] font-semibold px-2.5 rounded-full">
-
+              <></>
                 )}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>

@@ -227,7 +227,7 @@ export function HelpContent() {
                         </DropdownMenuItem>
                         <DropdownMenuItem>
                           <Link
-                            href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-e8d74b10454b5323f713/Interview-Coder-x64.dmg"
+                            href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-x64.dmg"
                             className="w-full"
                           >
                             Download for Mac (Intel)

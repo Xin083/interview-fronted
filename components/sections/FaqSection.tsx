@@ -180,7 +180,7 @@ export function FaqSection() {
                 <DropdownMenuContent>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-e8d74b10454b5323f713/Interview-Coder-arm64.dmg"
+                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-arm64.dmg"
                       className="w-full"
                     >
                       {t("hero.macSilicon")}
@@ -188,7 +188,7 @@ export function FaqSection() {
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-e8d74b10454b5323f713/Interview-Coder-x64.dmg"
+                      href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview-Coder-x64.dmg"
                       className="w-full"
                     >
                       {t("hero.macIntel")}
@@ -205,7 +205,7 @@ export function FaqSection() {
                   transition-all"
               >
                 <Link
-                  href="https://github.com/InterviewCoder863/Interview-coder/releases/download/untagged-fd6dcf26e68783bf6e35/Interview.Coder-Windows-1.0.21.exe"
+                  href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview.Coder-Windows-1.0.21.exe"
                   className="flex items-center gap-2"
                 >
                   <Image

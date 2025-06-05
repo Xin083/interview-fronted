@@ -109,7 +109,7 @@ export const HeroSection = () => {
             "
           >
             <Link
-              href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview.Coder-Windows-1.0.21.exe"
+              href="https://github.com/InterviewCoder863/Interview-coder/releases/download/v1.0.2/Interview.Coder-Windows-1.0.19.exe"
               className="flex items-center gap-2"
             >
               <Image src="/windows.svg" alt="Windows" width={20} height={20} className="w-6 h-6" />

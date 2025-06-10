@@ -255,6 +255,7 @@ export async function POST(req: Request) {
         if (subscriptionId && userId) {
           console.log("Processing new subscription:", {
             userId,
+            customerId,
             subscriptionId
           })
 
@@ -262,7 +263,28 @@ export async function POST(req: Request) {
             subscriptionId
           )
 
-          // Determine initial credits and plan based on subscription type
+          console.log("Stripe subscription object:", subscription)
+          console.log("Upserting subscription with params:", {
+            user_id: userId,
+            status: subscription.status,
+            plan: "pro",
+            credits: 50,
+            current_period_start: new Date(
+              subscription.current_period_start * 1000
+            ).toISOString(),
+            current_period_end: new Date(
+              subscription.current_period_end * 1000
+            ).toISOString(),
+            stripe_customer_id: customerId,
+            stripe_subscription_id: subscriptionId,
+            cancel_at: subscription.cancel_at
+              ? new Date(subscription.cancel_at * 1000).toISOString()
+              : null,
+            canceled_at: subscription.canceled_at
+              ? new Date(subscription.canceled_at * 1000).toISOString()
+              : null
+          })
+
           const { error: subscriptionError } = await supabase
             .from("subscriptions")
             .upsert({
@@ -372,9 +394,28 @@ export async function POST(req: Request) {
       const subscription = await stripe.subscriptions.retrieve(subscriptionId)
       console.log("Retrieved subscription details:", {
         status: subscription.status,
-        currentPeriodEnd: subscription.current_period_end
+        currentPeriodEnd: subscription.current_period_end,
+        subscription
       })
-
+      console.log("Upserting subscription with params:", {
+        user_id: userId,
+        status: subscription.status,
+        plan: "pro",
+        current_period_start: new Date(
+          subscription.current_period_start * 1000
+        ).toISOString(),
+        current_period_end: new Date(
+          subscription.current_period_end * 1000
+        ).toISOString(),
+        stripe_customer_id: customerId,
+        stripe_subscription_id: subscriptionId,
+        cancel_at: subscription.cancel_at
+          ? new Date(subscription.cancel_at * 1000).toISOString()
+          : null,
+        canceled_at: subscription.canceled_at
+          ? new Date(subscription.canceled_at * 1000).toISOString()
+          : null
+      })
       // Upsert subscription in DB
       const { error: subscriptionError } = await supabase
         .from("subscriptions")
